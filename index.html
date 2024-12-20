@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/alert.css">
+  <link rel="stylesheet" href="styles/checkbox.css">
+  
+  <script src="/scripts/index.js" defer></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img id="logo" src="./img/logo.svg" alt="Logo Quicklist">
+
+  <div id="content">
+    <a href="#" class="link">
+      &lt;- Voltar     
+    </a>
+
+    <h1>Compras da semana</h1>
+
+    <form id="form">
+      <input id="itemInput" type="text" placeholder="Adicionar um novo item" checked="checked" />
+      <button id="addButton" type="button">
+        Adicionar um item
+      </button>
+    </form>
+
+    <ul id="shoppingList">
+
+    </ul>
+  </div>
+
+  <div class="alert">
+    <img class="alert-icon" src="./img/warning.svg" alt="Alert">
+    <span>O item foi removido da lista</span>
+    <button class="close-btn">
+      <img src="./img/delete.svg" alt="Delete">
+    </button>
+  </div>
+</body>
+</html>

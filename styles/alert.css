@@ -1,0 +1,38 @@
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_alert */
+.alert {
+  position: absolute;
+  bottom: -60px;
+  width: 627px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--color-danger);
+  color: var(--always-right);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.alert span {
+  width: 100%;
+  text-align: start;
+  color: var(--always-white);
+  font-size: var(--text-md-size);
+  line-height: var(--text-md-line-height);
+  font-weight: var(--text-sb-weight);
+}
+
+.close-btn {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
